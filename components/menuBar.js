@@ -3,7 +3,8 @@ import Buttons from "./buttons";
 import LightSwitch from "./themeSwtich";
 import SocialButton from "./iconButtons";
 
-const MenuBar = () => {
+const MenuBar = ({mode, func}) => {
+
     return(
         <Container alignContent={"center"} >
             <Box 
@@ -14,7 +15,7 @@ const MenuBar = () => {
                 <Typography variant="h5">Alex Gornovoi</Typography>
                 <SocialButton />
                 <Buttons />
-                <LightSwitch />
+                <LightSwitch mode={mode} func={func}/>
             </Box>
         </Container>
     )

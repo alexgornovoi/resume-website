@@ -2,7 +2,7 @@ import TabButton from "./tabButton"
 import { Code, Info, Javascript, Article } from "@mui/icons-material"
 import { ButtonGroup } from "@mui/material"
 
-const Buttons = ({ mode }) => {
+const Buttons = () => {
     return (
         <ButtonGroup orientation="horizontal" sx={{ml: 20}}>
             <TabButton text="About" icon={<Info />} url="https://www.linkedin.com/in/alexeygornovoi/" />
