@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={mode ? Themes.DarkTheme : Themes.LightTheme}>
     <CssBaseline enableColorScheme />
     <MenuBar  mode={mode} func={changeMode} />
-      <Component {...pageProps} />)
+      <Component {...pageProps} />
     </ThemeProvider>
     )
     
