@@ -1,7 +1,11 @@
-import '../styles/globals.css'
+import MenuBar from "../components/menuBar"
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return(
+    <MenuBar>
+      <Component {...pageProps} />)
+    </MenuBar>
+    )
 }
 
 export default MyApp
