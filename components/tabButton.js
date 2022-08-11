@@ -1,17 +1,22 @@
 import { Button } from '@mui/material'
+import NextLink from 'next/link'
 
-const TabButton = ({ url, text, icon, off }) => {
+const TabButton = ({ text, icon, href, newWindow }) => {
+    const aStyling = { textDecoration: 'none', color: 'inherit' }
+
     return (
-        <Button
-            variant="text"
-            color="inherit"
-            startIcon={icon}
-            onClick={(e) => { e.preventDefault(); window.open(url, '_blank'); }}
-            style={{ justifyContent: "flex-start" }}
-            disabled={off ? true : false}
-        >
-            {text}
-        </Button>
+        <NextLink href={href} passHref>
+            <a target={newWindow ? "_blank" : ""} style={aStyling}>
+                <Button
+                    variant="text"
+                    color="inherit"
+                    startIcon={icon}
+                    style={{ justifyContent: "flex-start" }}
+                >
+                    {text}
+                </Button>
+            </a>
+        </NextLink>
     )
 }
 
