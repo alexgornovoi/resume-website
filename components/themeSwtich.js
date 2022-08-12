@@ -5,7 +5,6 @@ const LightSwitch = ({ mode, func }) => {
     return (
         <IconButton
             onClick={func}
-            sx={{ height: 45, width: 45 }}
         >
             {mode ? <LightMode /> : <DarkMode fontSize="inherit" />}
         </IconButton>

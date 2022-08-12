@@ -5,7 +5,7 @@ import { LinkedIn, GitHub } from "@mui/icons-material";
 
 const SocialButton = () => {
     return(
-        <Box sx={{m:0.5}}>
+        <Box sx={{m:0.5}}  display="inline-flex">
             <IconButton 
                 onClick={(e) => { e.preventDefault(); window.open("https://www.linkedin.com/in/alexeygornovoi/", '_blank'); }}
             >
@@ -16,6 +16,7 @@ const SocialButton = () => {
             >
                 <GitHub />
             </IconButton>
+            
         </Box>
     )
 }

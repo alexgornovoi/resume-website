@@ -1,8 +1,9 @@
 import MenuBar from "../components/menuBar"
 import { ThemeProvider } from "@emotion/react"
-import { CssBaseline } from "@mui/material"
+import { CssBaseline, Box, Container } from "@mui/material"
 import { React, useState, useEffect } from 'react'
 import Themes from "../lib/themes"
+import useWindowSize from "../lib/windowSize"
 
 function MyApp({ Component, pageProps }) {
   const item = {}
@@ -20,15 +21,31 @@ function MyApp({ Component, pageProps }) {
   const changeMode = () => {
     setMode(!mode)
   }
-
-  return(
+  
+  const size = useWindowSize();
+  
+  return (
     <ThemeProvider theme={mode ? Themes.DarkTheme : Themes.LightTheme}>
-    <CssBaseline enableColorScheme />
-    <MenuBar  mode={mode} func={changeMode} />
-      <Component {...pageProps} />
+      <CssBaseline enableColorScheme />
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
+        minWidth="30vh"
+      >
+        <Container maxWidth='lg'>
+        <Box 
+          minHeight="85vh"
+        >
+          <MenuBar mode={mode} func={changeMode} width={size.width}/>
+          <Component {...pageProps} />
+        </Box>
+        </Container>
+      </Box>
     </ThemeProvider>
-    )
-    
+  )
+
 }
 
 export default MyApp
