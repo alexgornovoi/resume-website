@@ -1,13 +1,13 @@
 import TabButton from "./tabButton"
-import {React, useState} from "react"
-import { Code, Info, Javascript, Article, Menu as MenuIcon } from "@mui/icons-material"
+import { React, useState } from "react"
+import { Menu as MenuIcon } from "@mui/icons-material"
 import { ButtonGroup, IconButton, Menu, MenuItem } from "@mui/material"
 
 const values = [
-    { text: "About", icon: <Info />, href: "/", newWindow: false },
-    { text: "Resume", icon: <Article />, href: "/resume", newWindow: false },
-    { text: "Project", icon: <Code />, href: "/projects", newWindow: false },
-    { text: "Source", icon: <Javascript />, href: "https://github.com/alexgornovoi/resume-website", newWindow: true }
+    { text: "About", href: "/", newWindow: false },
+    { text: "Resume", href: "/resume", newWindow: false },
+    { text: "Project", href: "/projects", newWindow: false },
+    { text: "Source", href: "https://github.com/alexgornovoi/resume-website", newWindow: true }
 ]
 
 const buttonList = values.map(
@@ -16,7 +16,6 @@ const buttonList = values.map(
             <TabButton
                 key={value.text}
                 text={value.text}
-                icon={value.icon}
                 href={value.href}
                 newWindow={value.newWindow}
             />
@@ -43,8 +42,8 @@ const DropDownButtons = () => {
     };
 
     const menuButtons = buttonList.map((button) => {
-        return(
-            <MenuItem key = {button.key} onClick={handleClose}>
+        return (
+            <MenuItem key={button.key} onClick={handleClose}>
                 {button}
             </MenuItem>
         )
@@ -52,20 +51,20 @@ const DropDownButtons = () => {
 
     return (
         <div>
-          <IconButton
-            onClick={handleClick}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-          >
-            {menuButtons}
-          </Menu>
+            <IconButton
+                onClick={handleClick}
+            >
+                <MenuIcon />
+            </IconButton>
+            <Menu
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+            >
+                {menuButtons}
+            </Menu>
         </div>
-      );
+    );
 }
 
 

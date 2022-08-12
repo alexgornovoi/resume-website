@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   const changeMode = () => {
     setMode(!mode)
   }
-  
+
   const size = useWindowSize();
   
   return (
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         minHeight="100vh"
         minWidth="30vh"
       >
-        <Container maxWidth='lg'>
+        <Container maxWidth='md'>
         <Box 
           minHeight="85vh"
         >
