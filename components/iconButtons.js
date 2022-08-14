@@ -16,7 +16,6 @@ const SocialButton = () => {
             >
                 <GitHub />
             </IconButton>
-            
         </Box>
     )
 }
