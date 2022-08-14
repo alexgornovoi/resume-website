@@ -1,8 +1,7 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, AppBar, Container } from "@mui/material";
 import LightSwitch from "./themeSwtich";
 import SocialButton from "./iconButtons";
 import ButtonTypes from "./buttons";
-
 
 const MenuBar = ({ mode, func, width }) => {
     function getButtonType(width) {
@@ -11,6 +10,7 @@ const MenuBar = ({ mode, func, width }) => {
                 <Box
                     display="flex"
                     justifyContent="flex-end"
+                    alignItems="center"
                 >
                     <ButtonTypes.InlineButtons />
                     <LightSwitch mode={mode} func={func} />
@@ -21,6 +21,7 @@ const MenuBar = ({ mode, func, width }) => {
                 <Box
                     display="flex"
                     justifyContent="flex-end"
+                    alignItems="center"
                 >
                     <LightSwitch mode={mode} func={func} />
                     <ButtonTypes.DropDownButtons />
@@ -30,19 +31,28 @@ const MenuBar = ({ mode, func, width }) => {
     }
 
     return (
-        <Box
-            display="flex"
+        <AppBar
+            sx={{ 
+                mb: 5, 
+                background: 'transparent', 
+                boxShadow: 'none', 
+                backdropFilter: "blur(10px)",
+            }}
         >
-            <Grid container spacing={2}>
-                <Grid item xs>
-                    <Typography variant="h6">Alex Gornovoi</Typography>
-                    <SocialButton />
+            <Box sx={{height: "64px"}} alignItems="center" display="flex">
+            <Container maxWidth="md">
+                <Grid container spacing={1}>
+                    <Grid item xs display="flex" alignItems="center">
+                        <Typography variant="body" sx={{ ml: 1.5 }}>Alex Gornovoi</Typography>
+                        <SocialButton />
+                    </Grid>
+                    <Grid item xs>
+                        {getButtonType(width)}
+                    </Grid>
                 </Grid>
-                <Grid item xs>
-                    {getButtonType(width)}
-                </Grid>
-            </Grid>
-        </Box>
+            </Container>
+            </Box>
+        </AppBar>
     )
 }
 

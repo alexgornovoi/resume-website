@@ -1,5 +1,7 @@
+import { Box } from "@mui/material"
+
 export default function About() {
   return (
-    <div>This is a test</div>
+    <Box></Box>
   )
 }

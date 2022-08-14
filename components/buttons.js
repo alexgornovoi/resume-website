@@ -6,7 +6,7 @@ import { ButtonGroup, IconButton, Menu, MenuItem } from "@mui/material"
 const values = [
     { text: "About", href: "/", newWindow: false },
     { text: "Resume", href: "/resume", newWindow: false },
-    { text: "Project", href: "/projects", newWindow: false },
+    { text: "Projects", href: "/projects", newWindow: false },
     { text: "Source", href: "https://github.com/alexgornovoi/resume-website", newWindow: true }
 ]
 
