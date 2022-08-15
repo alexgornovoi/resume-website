@@ -4,6 +4,7 @@ import { CssBaseline, Container } from "@mui/material"
 import { React, useState, useEffect } from 'react'
 import Themes from "../lib/themes"
 import useWindowSize from "../lib/windowSize"
+import Head from "next/head"
 
 function MyApp({ Component, pageProps }) {
 
@@ -45,6 +46,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider theme={mode ? Themes.DarkTheme : Themes.LightTheme}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <CssBaseline enableColorScheme />
       <Container maxWidth='md'>
         <MenuBar mode={mode} func={toggleTheme} width={size.width} />

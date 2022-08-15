@@ -3,6 +3,7 @@ import { NavigateNextSharp, GitHub, Web } from "@mui/icons-material"
 import TabButton from "./tabButton"
 import Link from "next/link"
 import Image from "next/image"
+import Head from "next/head"
 
 
 
@@ -11,6 +12,9 @@ const ProjectLayout = ({ name, desc, src, href }) => {
     const images = desc.images
     return (
         <Grow appear in timeout={1500} >
+            <Head key="About">
+                <title>{name}</title>
+            </Head>
             <Box sx={{ mb: 5 }}>
                 <Breadcrumbs separator={<NavigateNextSharp fontSize="small" />} sx={{ mb: 8 }}>
                     <Link href="/projects" passHref>

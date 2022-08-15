@@ -2,7 +2,7 @@
 import { Box, Typography, Avatar, Grid, Stack, Divider, Grow } from "@mui/material"
 import { LinkedIn, Mail } from "@mui/icons-material"
 import TabButton from "../components/tabButton"
-
+import Head from "next/head"
 
 const bioInfo = [
   { year: '2002', desc: ' Born in Massachusetts, United States' },
@@ -23,6 +23,9 @@ export default function About() {
   return (
     <Grow appear in timeout={1500} >
       <Box>
+        <Head key="About">
+          <title>About</title>
+        </Head>
         <Grid container alignItems="center" display="flex">
           <Grid item xs={8}>
             <Typography variant="h3">Alex Gornovoi</Typography>
