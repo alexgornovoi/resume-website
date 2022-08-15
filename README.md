@@ -1,1 +1,1 @@
-## Personnal website made using Next.js and MUI
+## Personal website made using Next.js and MUI

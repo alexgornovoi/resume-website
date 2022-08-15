@@ -1,6 +1,6 @@
 import MenuBar from "../components/menuBar"
 import { ThemeProvider } from "@mui/material/styles"
-import { CssBaseline, Box, Container } from "@mui/material"
+import { CssBaseline, Container } from "@mui/material"
 import { React, useState, useEffect } from 'react'
 import Themes from "../lib/themes"
 import useWindowSize from "../lib/windowSize"
@@ -46,12 +46,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={mode ? Themes.DarkTheme : Themes.LightTheme}>
       <CssBaseline enableColorScheme />
-          <Container maxWidth='md'>
-              <MenuBar mode={mode} func={toggleTheme} width={size.width} />
-              <Container maxWidth='sm' sx={{mt:'120px'}}>
-              <Component {...pageProps}/>
-              </Container>
-          </Container>
+      <Container maxWidth='md'>
+        <MenuBar mode={mode} func={toggleTheme} width={size.width} />
+        <Container maxWidth='sm' sx={{ mt: '120px' }}>
+          <Component {...pageProps} />
+        </Container>
+      </Container>
     </ThemeProvider>
   )
 }

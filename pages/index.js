@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Box, Typography, Avatar, Grid, Stack, Divider, Button } from "@mui/material"
+import { Box, Typography, Avatar, Grid, Stack, Divider } from "@mui/material"
 import { LinkedIn, Mail } from "@mui/icons-material"
 import TabButton from "../components/tabButton"
 
@@ -47,14 +47,14 @@ export default function About() {
           <Typography sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '6px' }}>
             Interests
           </Typography>
-          <Typography>Coding, Artificial Intelligence, Reading, Art, Traveling, Boba, Cats</Typography>
+          <Typography>Coding, Artificial Intelligence, Reading, Art, Traveling, Bubble Tea, Cats</Typography>
         </Box>
         <Box>
           <Typography sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '6px' }}>
             Connect
           </Typography>
           <Box display="flex" flexDirection="column">
-            <TabButton href='https://www.linkedin.com/in/alexeygornovoi/' icon={<LinkedIn />} text="Connect with me on LinkedIn" newWindow/>
+            <TabButton href='https://www.linkedin.com/in/alexeygornovoi/' icon={<LinkedIn />} text="Connect with me on LinkedIn" newWindow />
             <TabButton href='mailto:alex.gornovoi@gmail.com' icon={<Mail />} text="Send me an email" />
           </Box>
         </Box>
