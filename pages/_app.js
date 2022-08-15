@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={mode ? Themes.DarkTheme : Themes.LightTheme}>
       <Head>
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <CssBaseline enableColorScheme />
       <Container maxWidth='md'>
