@@ -77,10 +77,10 @@ const skillList = skills.map((skill) => {
 export default function Resume() {
   return (
     <Grow appear in timeout={1500} >
-      <Head key="About">
-        <title>Resume</title>
-      </Head>
       <Box>
+        <Head key="Resume">
+          <title>Resume</title>
+        </Head>
         <Typography variant="h3">Resume</Typography>
         <Stack spacing={2} sx={{ mt: "30px", mb: "50px" }} divider={<Divider />}>
           {/*Education */}

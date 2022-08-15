@@ -12,11 +12,11 @@ const ProjectLayout = ({ name, desc, src, href }) => {
     const images = desc.images
     return (
         <Grow appear in timeout={1500} >
-            <Head key="About">
-                <title>{name}</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            </Head>
             <Box sx={{ mb: 5 }}>
+                <Head key="Project">
+                    <title>{name}</title>
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                </Head>
                 <Breadcrumbs separator={<NavigateNextSharp fontSize="small" />} sx={{ mb: 8 }}>
                     <Link href="/projects" passHref>
                         <a style={{ color: "#9D3B83" }}>

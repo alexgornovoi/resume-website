@@ -29,10 +29,10 @@ const projectGrid = projectList.map((project) => {
 export default function Projects() {
   return (
     <Grow appear in timeout={1500} >
-      <Head key="About">
-        <title>Projects</title>
-      </Head>
       <Box>
+        <Head key="Projects">
+          <title>Projects</title>
+        </Head>
         <Typography variant="h3" sx={{ mb: 5 }}>Projects</Typography>
         <Grid container spacing={2}>
           {projectGrid}
