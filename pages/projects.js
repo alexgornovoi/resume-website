@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from "@mui/material"
+import { Box, Typography, Grid, Grow } from "@mui/material"
 import Project from "../components/project"
 
 const projectList = [
@@ -27,11 +27,13 @@ const projectGrid = projectList.map((project) => {
 
 export default function Projects() {
   return (
-    <Box>
-      <Typography variant="h3" sx={{ mb: 5 }}>Projects</Typography>
-      <Grid container spacing={2}>
-        {projectGrid}
-      </Grid>
-    </Box>
+    <Grow appear in timeout={1500} >
+      <Box>
+        <Typography variant="h3" sx={{ mb: 5 }}>Projects</Typography>
+        <Grid container spacing={2}>
+          {projectGrid}
+        </Grid>
+      </Box>
+    </Grow>
   )
 }

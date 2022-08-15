@@ -1,4 +1,4 @@
-import { Stack, Divider, Typography, Box } from "@mui/material";
+import { Stack, Divider, Typography, Box, Grow } from "@mui/material";
 
 const experience = [
   {
@@ -75,44 +75,46 @@ const skillList = skills.map((skill) => {
 
 export default function Resume() {
   return (
-    <Box>
-      <Typography variant="h3">Resume</Typography>
-      <Stack spacing={2} sx={{ mt: "30px", mb: "50px" }} divider={<Divider />}>
-        {/*Education */}
-        <Box>
-          <Typography variant="h5" sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '10px' }}>
-            Education
-          </Typography>
-          <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-            University of Massachusetts Amherst
-          </Typography>
+    <Grow appear in timeout={1500} >
+      <Box>
+        <Typography variant="h3">Resume</Typography>
+        <Stack spacing={2} sx={{ mt: "30px", mb: "50px" }} divider={<Divider />}>
+          {/*Education */}
           <Box>
-            Computer Science and Computational Mathematics
-            <ul>
-              <li>Expected Graduation: May, 2024</li>
-              <li>GPA: 3.64</li>
-              <li>
-                Relevant Coursework:
-                <ul>{listArray(relevantCourseWork)}</ul>
-              </li>
-            </ul>
+            <Typography variant="h5" sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '10px' }}>
+              Education
+            </Typography>
+            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+              University of Massachusetts Amherst
+            </Typography>
+            <Box>
+              Computer Science and Computational Mathematics
+              <ul>
+                <li>Expected Graduation: May, 2024</li>
+                <li>GPA: 3.64</li>
+                <li>
+                  Relevant Coursework:
+                  <ul>{listArray(relevantCourseWork)}</ul>
+                </li>
+              </ul>
+            </Box>
           </Box>
-        </Box>
-        {/*Experience */}
-        <Box>
-          <Typography variant="h5" sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '10px' }}>
-            Experience
-          </Typography>
-          {experienceList}
-        </Box>
-        {/*Skills */}
-        <Box>
-          <Typography variant="h5" sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '10px' }}>
-            Skills
-          </Typography>
-          <ul>{skillList}</ul>
-        </Box>
-      </Stack>
-    </Box>
+          {/*Experience */}
+          <Box>
+            <Typography variant="h5" sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '10px' }}>
+              Experience
+            </Typography>
+            {experienceList}
+          </Box>
+          {/*Skills */}
+          <Box>
+            <Typography variant="h5" sx={{ textDecorationLine: 'underline', fontWeight: 'bold', mb: '10px' }}>
+              Skills
+            </Typography>
+            <ul>{skillList}</ul>
+          </Box>
+        </Stack>
+      </Box>
+    </Grow>
   )
 }
