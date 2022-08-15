@@ -14,6 +14,7 @@ const ProjectLayout = ({ name, desc, src, href }) => {
         <Grow appear in timeout={1500} >
             <Head key="About">
                 <title>{name}</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <Box sx={{ mb: 5 }}>
                 <Breadcrumbs separator={<NavigateNextSharp fontSize="small" />} sx={{ mb: 8 }}>
