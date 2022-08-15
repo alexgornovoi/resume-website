@@ -1,3 +1,3 @@
 ## Personal website made using Next.js and MUI
 
-Hosted at: alexgornovoi.com
+Finished product can be found at the following URL: https://alexgornovoi.com
