@@ -48,6 +48,7 @@ const ProjectLayout = ({ name, desc, src, href }) => {
                                         height="1873"
                                         width="3360"
                                         style={{ borderRadius: "16px" }}
+                                        unoptimized={true}
                                     />
                                 </ImageListItem>
                             </Box>
