@@ -19,7 +19,7 @@ const projectList = [
 
 const projectGrid = projectList.map((project) => {
   return (
-    <Grid item xs={8} key={project.name}>
+    <Grid item xs={8} md={6} key={project.name}>
       <Project image={project.image} name={project.name} desc={project.desc} href={project.href} />
     </Grid>
   )
