@@ -34,7 +34,7 @@ export default function Projects() {
           <title>Projects</title>
         </Head>
         <Typography variant="h3" sx={{ mb: 5 }}>Projects</Typography>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} justifyContent="center">
           {projectGrid}
         </Grid>
       </Box>
