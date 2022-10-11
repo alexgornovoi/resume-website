@@ -26,6 +26,7 @@ const relevantCourseWork = [
 const skills = [
   { type: "Programming Languages", skill: ["Java", "C", "Javascript", "Python"] },
   { type: "Frameworks/Libraries", skill: ["React.js", "Next.js", "Material-UI", "Selenium"] },
+  { type: "Methodologies", skill: ["Data Structures","Algorithms","Object Oriented Programming (OOP)"]},
   { type: "Tools", skill: ["GitHub", "Node.js"] },
   { type: "IDE’s", skill: ["Visual Studio Code", "Vim", "jGrasp", "Eclipse"] },
   { type: "Operating Systems", skill: ["Microsoft Windows", "Linux", "macOS"] },
