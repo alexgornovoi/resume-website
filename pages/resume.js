@@ -12,10 +12,22 @@ const experience = [
       "Used scripted solution to configure VPN and all necessary applications",
       "Provided Desktop support to staff and students using GoToAssist"
     ]
+  },
+  {
+    name: "Tech Support",
+    company: "RSM",
+    location: "Amherst, MA",
+    period: "October 2022 - Present",
+    desc: [
+      "Assisted students and staff as online tech support"
+    ]
   }
 ]
 
 const relevantCourseWork = [
+  "Computer Science Principles",
+  "Introduction to Computation",
+  "Intro to Scientific Computation",
   "Problem Solving with Computers",
   "Programming with Data Structures",
   "C Programming Language",
@@ -25,12 +37,12 @@ const relevantCourseWork = [
 
 const skills = [
   { type: "Programming Languages", skill: ["Java", "C", "Javascript", "Python"] },
-  { type: "Frameworks/Libraries", skill: ["React.js", "Next.js", "Material-UI", "Selenium"] },
+  { type: "Frameworks/Libraries", skill: ["React.js", "Next.js", "Material-UI", "Selenium", "Numpy"] },
   { type: "Methodologies", skill: ["Data Structures","Algorithms","Object Oriented Programming (OOP)"]},
   { type: "Tools", skill: ["GitHub", "Node.js"] },
   { type: "IDE’s", skill: ["Visual Studio Code", "Vim", "jGrasp", "Eclipse"] },
   { type: "Operating Systems", skill: ["Microsoft Windows", "Linux", "macOS"] },
-  { type: "General", skill: ["Google Workspace", "Microsoft 365"] },
+  { type: "General", skill: ["Google Workspace", "Microsoft 365", "JJ"] },
   { type: "IT", skill: ["GoToAssist", "Imaging", "Troubleshooting"] },
 ]
 
