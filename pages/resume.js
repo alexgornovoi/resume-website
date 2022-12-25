@@ -15,7 +15,7 @@ const experience = [
   },
   {
     name: "Tech Support",
-    company: "RSM",
+    company: "Russian School of Mathematics",
     location: "Amherst, MA",
     period: "October 2022 - Present",
     desc: [
@@ -42,7 +42,7 @@ const skills = [
   { type: "Tools", skill: ["GitHub", "Node.js"] },
   { type: "IDE’s", skill: ["Visual Studio Code", "Vim", "jGrasp", "Eclipse"] },
   { type: "Operating Systems", skill: ["Microsoft Windows", "Linux", "macOS"] },
-  { type: "General", skill: ["Google Workspace", "Microsoft 365", "JJ"] },
+  { type: "General", skill: ["Google Workspace", "Microsoft 365"] },
   { type: "IT", skill: ["GoToAssist", "Imaging", "Troubleshooting"] },
 ]
 
