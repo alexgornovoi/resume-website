@@ -108,7 +108,6 @@ export default function Resume() {
               Computer Science and Computational Mathematics
               <ul>
                 <li>Expected Graduation: May, 2024</li>
-                <li>GPA: 3.64</li>
                 <li>
                   Relevant Coursework:
                   <ul>{listArray(relevantCourseWork)}</ul>
