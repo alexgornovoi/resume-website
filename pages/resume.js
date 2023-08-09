@@ -2,6 +2,25 @@ import { Stack, Divider, Typography, Box, Grow } from "@mui/material";
 import Head from "next/head";
 
 const experience = [
+    {
+    name: "Application Developer Intern",
+    company: "Evernorth",
+    location: "Bloomfield, CT",
+    period: "May 2023 - August 2023",
+    desc: [
+      "Created framework for E2E testing using Cypress",
+      "Setup Cloudbees CI to automate testing whenever code was pushed",
+    ]
+  },
+    {
+    name: "Frontend Developer Lead",
+    company: "The Cigna Group",
+    location: "Bloomfield, CT",
+    period: "May 2023 - August 2023",
+    desc: [
+      "Led fellow interns in developing a front-end UI for an industry-level web application"
+    ]
+  },
   {
     name: "Information Technology Assistant and Desktop Support",
     company: "Stockbridge School of Agriculture at UMass Amherst",
@@ -25,6 +44,10 @@ const experience = [
 ]
 
 const relevantCourseWork = [
+  "Software Engineering",
+  "Web Programming",
+  "Artificial Intelligence",
+  "Introduction to Algorithms",
   "Computer Science Principles",
   "Introduction to Computation",
   "Intro to Scientific Computation",
@@ -37,9 +60,9 @@ const relevantCourseWork = [
 
 const skills = [
   { type: "Programming Languages", skill: ["Java", "C", "Javascript", "Python"] },
-  { type: "Frameworks/Libraries", skill: ["React.js", "Next.js", "Material-UI", "Selenium", "Numpy"] },
-  { type: "Methodologies", skill: ["Data Structures","Algorithms","Object Oriented Programming (OOP)"]},
-  { type: "Tools", skill: ["GitHub", "Node.js"] },
+  { type: "Frameworks/Libraries", skill: ["React.js", "Next.js", "Material-UI", "Selenium", "Numpy", "Cypress"] },
+  { type: "Methodologies", skill: ["Agile","Data Structures","Algorithms","Object Oriented Programming (OOP)"]},
+  { type: "Tools", skill: ["GitHub", "Node.js", "AWS Amplify", "Jenkins", "Cloudbees CI"] },
   { type: "IDE’s", skill: ["Visual Studio Code", "Vim", "jGrasp", "Eclipse"] },
   { type: "Operating Systems", skill: ["Microsoft Windows", "Linux", "macOS"] },
   { type: "General", skill: ["Google Workspace", "Microsoft 365"] },
