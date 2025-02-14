@@ -1,3 +1,4 @@
-## Personal website made using Next.js and MUI
+## Personal website made using Next.js and MUI (THIS SITE IS NOW DEPRECATED)
 
-Finished product can be found at the following URL: https://alexgornovoi.com
+The only way to view this website is by running it locally.
+
